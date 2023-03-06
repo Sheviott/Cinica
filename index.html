@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230305163322">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230307023117">
   <title>Главная</title>
 </head>
 
@@ -53,7 +53,7 @@
               </svg>
               <a href="#choose-city" class="header__city popup-link">Брянск</a>
             </div>
-
+            
           </div>
         </div>
       </div>
@@ -81,16 +81,16 @@
                 <h1 class="mainscreen__title">Строительные работы</h1>
                 <ul class="mainscreen__list">
                   <li class="mainscreen__item">
-                    Полусухая стяжка пола
+                    <a class="mainscreen__link" href="#floor">Полусухая стяжка пола</a>
                   </li>
                   <li class="mainscreen__item">
-                    Механизированная штукатурка
+                    <a class="mainscreen__link" href="#plaster">Механизированная штукатурка</a>
                   </li>
                   <li class="mainscreen__item">
-                    Кровля
+                   <a class="mainscreen__link" href="#roof"> Кровля</a>
                   </li>
                   <li class="mainscreen__item">
-                    Фасад
+                    <a class="mainscreen__link" href="#facade" >Фасад</a>
                   </li>
                 </ul>
               </div>
@@ -99,7 +99,7 @@
                   <span class="sale__text-yellow">Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы
                   сделаем скидку 15%
                 </div>
-                <a data-da=".sale__content, 991" href="#calculate" class="sale__get-sale sale-block">Получить скидку
+                <a data-da=".sale__content, 991" href="" class="sale__get-sale sale-block">Получить скидку
                   <svg class="svg-icon svg-icon-arrow">
                     <use xlink:href="/images/icons/icons.svg#arrowR"></use>
                   </svg>
@@ -152,8 +152,7 @@
           <div class="how-wedo__body">
             <div class="how-wedo__image">
               <picture>
-                <source srcset="images/main/howWeDo/Frame.jpg" type="image/webp">
-                <img src="images/main/howWeDo/Frame.jpg" srcset="" alt="" />
+                <img src="images/main/howWeDo/Frame@1x.jpg" srcset="" alt="" />
               </picture>
             </div>
             <div class="how-wedo__content">
@@ -272,7 +271,7 @@
               <picture><source srcset="images/main/services/1.webp" type="image/webp"><img src="images/main/services/1.jpg" alt=""></picture>
             </div>
             <div class="services__content">
-              <div class="content__title">Полусухая стяжка пола</div>
+              <div id="floor" class="content__title">Полусухая стяжка пола</div>
               <div class="content__subtitle">
                 <div class="subtitle__row">
                   <div class="subtitle__icon"><svg class='svg-icon svg-icon-pocket'>
@@ -342,7 +341,7 @@
               <picture><source srcset="images/main/services/2.webp" type="image/webp"><img src="images/main/services/2.jpg" alt=""></picture>
             </div>
             <div class="services__content">
-              <div class="content__title">Механизированная штукатурка </div>
+              <div id="plaster" class="content__title">Механизированная штукатурка </div>
               <div class="content__subtitle">
                 <div class="subtitle__row">
                   <div class="subtitle__icon"><svg class='svg-icon svg-icon-pocket'>
@@ -412,7 +411,7 @@
               <picture><source srcset="images/main/services/3.webp" type="image/webp"><img src="images/main/services/3.jpg" alt=""></picture>
             </div>
             <div class="services__content">
-              <div class="content__title">Кровля</div>
+              <div id="roof" class="content__title">Кровля</div>
               <div class="content__subtitle">
                 <div class="subtitle__row">
                   <div class="subtitle__icon"><svg class='svg-icon svg-icon-pocket'>
@@ -482,7 +481,7 @@
               <picture><source srcset="images/main/services/4.webp" type="image/webp"><img src="images/main/services/4.jpg" alt=""></picture>
             </div>
             <div class="services__content">
-              <div class="content__title">Фасад</div>
+              <div id="facade" class="content__title">Фасад</div>
               <div class="content__subtitle">
                 <div class="subtitle__row">
                   <div class="subtitle__icon"><svg class='svg-icon svg-icon-pocket'>
@@ -681,7 +680,7 @@
           </div>
         </div>
       </section>
-      <section id="calculate" class="calculate">
+      <section class="calculate">
         <div class="calculate__container">
           <div class="calculate__body">
             <div class="calculate__left">
@@ -692,7 +691,7 @@
             <div class="calculate__right">
               <form action="" class="calculate__form">
                 <fieldset class="calculate__fieldset">
-                  <input placeholder=" " class="calculate__input" type="tel" name="" id="formtel">
+                  <input  placeholder=" " class="calculate__input js-tel" type="tel" name="" id="formtel">
                   <label class="calculate__label" for="formtel">Номер телефона</label>
                 </fieldset>
                 <button class="calculate__button btn" type="submit">Заказать звонок</button>
@@ -800,16 +799,16 @@
                 <div class="swiper-pagination"></div>
                 <div class="tabs__wrapper swiper-wrapper">
                   <div class="tabs__slide swiper-slide">
-                    <button data-id="1" class="works__tab btn btn-black js-tab-button active">Стяжка пола</button>
+                    <div data-id="1" class="works__tab btn btn-black js-tab-button active">Стяжка пола</div>
                   </div>
                   <div class="tabs__slide swiper-slide">
-                    <button data-id="2" class="works__tab btn btn-black js-tab-button">Штукатурка</button>
+                    <div data-id="2" class="works__tab btn btn-black js-tab-button">Штукатурка</div>
                   </div>
                   <div class="tabs__slide swiper-slide">
-                    <button data-id="3" class="works__tab btn btn-black js-tab-button">Кровля</button>
+                    <div data-id="3" class="works__tab btn btn-black js-tab-button">Кровля</div>
                   </div>
                   <div class="tabs__slide swiper-slide">
-                    <button data-id="4" class="works__tab btn btn-black js-tab-button">Фасады</button>
+                    <div data-id="4" class="works__tab btn btn-black js-tab-button">Фасады</div>
                   </div>
                 </div>
               </div>
@@ -841,7 +840,7 @@
                   <div class="left-works__slide swiper-slide">
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL2.webp" type="image/webp"><img src="images/main/works/sliderL2.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL1.webp" type="image/webp"><img src="images/main/works/sliderL1.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -859,7 +858,7 @@
                   <div class="left-works__slide swiper-slide">
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL3.webp" type="image/webp"><img src="images/main/works/sliderL3.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL1.webp" type="image/webp"><img src="images/main/works/sliderL1.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -877,7 +876,7 @@
                   <div class="left-works__slide swiper-slide">
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL4.webp" type="image/webp"><img src="images/main/works/sliderL4.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL1.webp" type="image/webp"><img src="images/main/works/sliderL1.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -1042,25 +1041,7 @@
 
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL1.webp" type="image/webp"><img src="images/main/works/sliderL1.jpg" alt=""></picture>
-                        <button class="left-works__showmore">Подробнее</button>
-                      </div>
-                      <div class="left-works__title">Квартира в ЖК “Солнце”</div>
-                      <div class="left-works__content">
-                        <ul class="left-works__list">
-                          <li class="left-works__item">Объем работ: <span>64 м2</span></li>
-                          <li class="left-works__item">Средняя толщина: <span>8,5 см</span></li>
-                          <li class="left-works__item">Срок выполнения: <span>1 день</span></li>
-                          <li class="left-works__item">Цена: <span>55 700 р</span></li>
-                        </ul>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="left-works__slide swiper-slide">
-                    <div class="left-works__body">
-                      <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL2.webp" type="image/webp"><img src="images/main/works/sliderL2.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL3.webp" type="image/webp"><img src="images/main/works/sliderL3.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -1096,7 +1077,7 @@
                   <div class="left-works__slide swiper-slide">
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL4.webp" type="image/webp"><img src="images/main/works/sliderL4.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL3.webp" type="image/webp"><img src="images/main/works/sliderL3.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -1114,7 +1095,25 @@
                   <div class="left-works__slide swiper-slide">
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL2.webp" type="image/webp"><img src="images/main/works/sliderL2.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL3.webp" type="image/webp"><img src="images/main/works/sliderL3.jpg" alt=""></picture>
+                        <button class="left-works__showmore">Подробнее</button>
+                      </div>
+                      <div class="left-works__title">Квартира в ЖК “Солнце”</div>
+                      <div class="left-works__content">
+                        <ul class="left-works__list">
+                          <li class="left-works__item">Объем работ: <span>64 м2</span></li>
+                          <li class="left-works__item">Средняя толщина: <span>8,5 см</span></li>
+                          <li class="left-works__item">Срок выполнения: <span>1 день</span></li>
+                          <li class="left-works__item">Цена: <span>55 700 р</span></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="left-works__slide swiper-slide">
+                    <div class="left-works__body">
+                      <div class="left-works__image">
+                        <picture><source srcset="images/main/works/sliderL3.webp" type="image/webp"><img src="images/main/works/sliderL3.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -1261,43 +1260,7 @@
 
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL1.webp" type="image/webp"><img src="images/main/works/sliderL1.jpg" alt=""></picture>
-                        <button class="left-works__showmore">Подробнее</button>
-                      </div>
-                      <div class="left-works__title">Квартира в ЖК “Солнце”</div>
-                      <div class="left-works__content">
-                        <ul class="left-works__list">
-                          <li class="left-works__item">Объем работ: <span>64 м2</span></li>
-                          <li class="left-works__item">Средняя толщина: <span>8,5 см</span></li>
-                          <li class="left-works__item">Срок выполнения: <span>1 день</span></li>
-                          <li class="left-works__item">Цена: <span>55 700 р</span></li>
-                        </ul>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="left-works__slide swiper-slide">
-                    <div class="left-works__body">
-                      <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL2.webp" type="image/webp"><img src="images/main/works/sliderL2.jpg" alt=""></picture>
-                        <button class="left-works__showmore">Подробнее</button>
-                      </div>
-                      <div class="left-works__title">Квартира в ЖК “Солнце”</div>
-                      <div class="left-works__content">
-                        <ul class="left-works__list">
-                          <li class="left-works__item">Объем работ: <span>64 м2</span></li>
-                          <li class="left-works__item">Средняя толщина: <span>8,5 см</span></li>
-                          <li class="left-works__item">Срок выполнения: <span>1 день</span></li>
-                          <li class="left-works__item">Цена: <span>55 700 р</span></li>
-                        </ul>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="left-works__slide swiper-slide">
-                    <div class="left-works__body">
-                      <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL3.webp" type="image/webp"><img src="images/main/works/sliderL3.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL4.webp" type="image/webp"><img src="images/main/works/sliderL4.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -1333,7 +1296,7 @@
                   <div class="left-works__slide swiper-slide">
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL2.webp" type="image/webp"><img src="images/main/works/sliderL2.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL4.webp" type="image/webp"><img src="images/main/works/sliderL4.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -1351,7 +1314,43 @@
                   <div class="left-works__slide swiper-slide">
                     <div class="left-works__body">
                       <div class="left-works__image">
-                        <picture><source srcset="images/main/works/sliderL3.webp" type="image/webp"><img src="images/main/works/sliderL3.jpg" alt=""></picture>
+                        <picture><source srcset="images/main/works/sliderL4.webp" type="image/webp"><img src="images/main/works/sliderL4.jpg" alt=""></picture>
+                        <button class="left-works__showmore">Подробнее</button>
+                      </div>
+                      <div class="left-works__title">Квартира в ЖК “Солнце”</div>
+                      <div class="left-works__content">
+                        <ul class="left-works__list">
+                          <li class="left-works__item">Объем работ: <span>64 м2</span></li>
+                          <li class="left-works__item">Средняя толщина: <span>8,5 см</span></li>
+                          <li class="left-works__item">Срок выполнения: <span>1 день</span></li>
+                          <li class="left-works__item">Цена: <span>55 700 р</span></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="left-works__slide swiper-slide">
+                    <div class="left-works__body">
+                      <div class="left-works__image">
+                        <picture><source srcset="images/main/works/sliderL4.webp" type="image/webp"><img src="images/main/works/sliderL4.jpg" alt=""></picture>
+                        <button class="left-works__showmore">Подробнее</button>
+                      </div>
+                      <div class="left-works__title">Квартира в ЖК “Солнце”</div>
+                      <div class="left-works__content">
+                        <ul class="left-works__list">
+                          <li class="left-works__item">Объем работ: <span>64 м2</span></li>
+                          <li class="left-works__item">Средняя толщина: <span>8,5 см</span></li>
+                          <li class="left-works__item">Срок выполнения: <span>1 день</span></li>
+                          <li class="left-works__item">Цена: <span>55 700 р</span></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="left-works__slide swiper-slide">
+                    <div class="left-works__body">
+                      <div class="left-works__image">
+                        <picture><source srcset="images/main/works/sliderL4.webp" type="image/webp"><img src="images/main/works/sliderL4.jpg" alt=""></picture>
                         <button class="left-works__showmore">Подробнее</button>
                       </div>
                       <div class="left-works__title">Квартира в ЖК “Солнце”</div>
@@ -1789,9 +1788,9 @@
                   </span>
                 </div>
                 <div class="request__row">
-                  <input placeholder=" " minlength="11" maxlength="11" type="tel" required name="" id=""
-                    class="request__input">
-                  <label for="" class="request__label">8 900 9000 9000</label>
+                  <input placeholder=" " minlength="11" type="tel" required name="" id=""
+                    class="request__input js-tel">
+                  <label for="" class="request__label">8 900 900 9000</label>
                   <span class="request__valid">
                     <img src="../images/icons/mark.svg" alt="">
                   </span>
@@ -1804,7 +1803,7 @@
                   <label class="request__label request__label-checkbox">
                     <input type="checkbox" required name="" id="">
                     <span class="checkbox-span"></span>
-                    Согласен на обработку персональных данных в соответствии с <br> <span
+                    Согласен на обработку персональных данных в соответствии с <span
                       class="request__policy">Политикой конфиденциальности</span>
                   </label>
                 </div>
@@ -1894,8 +1893,8 @@
   </div>
 </div>
 
-  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230305163322"></script>
-<script src="js/app.min.js?_v=20230305163322"></script>
+  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230307023117"></script>
+<script src="js/app.min.js?_v=20230307023117"></script>
 
 </body>
 
