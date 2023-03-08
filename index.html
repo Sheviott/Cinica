@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230307024110">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230308163332">
   <title>Главная</title>
 </head>
 
@@ -21,6 +21,14 @@
             <span></span>
           </button>
           <nav class="menu__body">
+            <div data-da=".header__menu, 475, 1" class="header__actions">
+              <div class="header__geo">
+                <svg class='svg-icon svg-geo'>
+                <use xlink:href='/images/icons/icons.svg#geo'></use>
+                </svg>
+                <a href="#choose-city" class="header__city popup-link">Брянск</a>
+              </div>
+            </div>
             <ul class="menu__list">
               <li class="menu__item "><a href="#how-wedo" class="menu__link">О компании</a></li>
               <li class="menu__item "><a href="#services" class="menu__link">Услуги</a></li>
@@ -46,15 +54,24 @@
               </div>
             </div>
           </nav>
-          <div class="header__actions">
-            <div class="header__geo">
-              <svg class='svg-icon svg-geo'>
-              <use xlink:href='/images/icons/icons.svg#geo'></use>
-              </svg>
-              <a href="#choose-city" class="header__city popup-link">Брянск</a>
-            </div>
-            
+          <div class="contacts__messengers-head">
+            <a href="tel:78009009090" class="contacts__link contacts__telehpone">
+              <svg class='svg-icon'>
+                <use xlink:href='/images/icons/icons.svg#call'></use>
+                </svg>
+            </a>
+            <a href="http://t.me/тег" class="contacts__link contacts__telegram">
+              <svg class='svg-icon'>
+                <use xlink:href='/images/icons/icons.svg#tg'></use>
+                </svg>
+            </a>
+              <a href="https://wa.me/номер" class="contacts__link contacts__whatsapp">
+                <svg class='svg-icon'>
+                  <use xlink:href='/images/icons/icons.svg#whatsapp'></use>
+                  </svg>
+              </a>
           </div>
+          
         </div>
       </div>
     </div>
@@ -99,7 +116,7 @@
                   <span class="sale__text-yellow">Мы открыты и принимаем заказы до 21:00</span>, позвоните сейчас и мы
                   сделаем скидку 15%
                 </div>
-                <a data-da=".sale__content, 991" href="" class="sale__get-sale sale-block">Получить скидку
+                <a data-da=".sale__content, 992" href="#calculate" class="sale__get-sale sale-block">Получить скидку
                   <svg class="svg-icon svg-icon-arrow">
                     <use xlink:href="/images/icons/icons.svg#arrowR"></use>
                   </svg>
@@ -680,11 +697,11 @@
           </div>
         </div>
       </section>
-      <section class="calculate">
+      <section id="calculate" class="calculate">
         <div class="calculate__container">
           <div class="calculate__body">
             <div class="calculate__left">
-              <div class="calculate__title">Рассчитать стоимость </div>
+              <div  class="calculate__title">Рассчитать стоимость </div>
               <div class="calculate__subtitle">Оставьте заявку сейчас и получите <span class="text-green">скидку
                   15%</span></div>
             </div>
@@ -1893,8 +1910,8 @@
   </div>
 </div>
 
-  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230307024110"></script>
-<script src="js/app.min.js?_v=20230307024110"></script>
+  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230308163332"></script>
+<script src="js/app.min.js?_v=20230308163332"></script>
 
 </body>
 
