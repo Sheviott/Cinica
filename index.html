@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230308164103">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230308191041">
   <title>Главная</title>
 </head>
 
@@ -708,7 +708,7 @@
             <div class="calculate__right">
               <form action="" class="calculate__form">
                 <fieldset class="calculate__fieldset">
-                  <input  placeholder=" " class="calculate__input js-tel" type="tel" name="" id="formtel">
+                  <input id="js-tel"  placeholder=" " class="calculate__input js-tel" type="tel" name="" id="formtel">
                   <label class="calculate__label" for="formtel">Номер телефона</label>
                 </fieldset>
                 <button class="calculate__button btn" type="submit">Заказать звонок</button>
@@ -1798,15 +1798,14 @@
               <h2 id="request" class="request__title title">Оставить заявку</h2>
               <form action="" class="request__form">
                 <div class="request__row">
-                  <input required placeholder=" " minlength="3" type="text" name="" id="" class="request__input">
+                  <input required placeholder=" " oninput="this.value=this.value.replace(/[^а-яА-Яa-zA-Z]/g,'');" minlength="3" type="text" name="" id="" class="request__input">
                   <label for="" class="request__label">Имя</label>
                   <span class="request__valid">
                     <img src="../images/icons/mark.svg" alt="">
                   </span>
                 </div>
                 <div class="request__row">
-                  <input placeholder=" " minlength="11" type="tel" required name="" id=""
-                    class="request__input js-tel">
+                  <input placeholder=" " minlength="11" type="tel" required name="" id="" class="request__input js-tel">
                   <label for="" class="request__label">8 900 900 9000</label>
                   <span class="request__valid">
                     <img src="../images/icons/mark.svg" alt="">
@@ -1910,8 +1909,8 @@
   </div>
 </div>
 
-  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230308164103"></script>
-<script src="js/app.min.js?_v=20230308164103"></script>
+  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230308191041"></script>
+<script src="js/app.min.js?_v=20230308191041"></script>
 
 </body>
 
