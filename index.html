@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230309135817">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230317112311">
   <title>Главная</title>
 </head>
 
@@ -812,23 +812,20 @@
           <div class="works__body">
             <div class="works__title title"> <span class="line-decor">Наши работы</span></div>
             <div class="works__tabs js-tab-wrapper">
-              <div class="tabs__slider swiper">
-                <div class="swiper-pagination"></div>
-                <div class="tabs__wrapper swiper-wrapper">
-                  <div class="tabs__slide swiper-slide">
-                    <div data-id="1" class="works__tab btn btn-black js-tab-button active">Стяжка пола</div>
-                  </div>
-                  <div class="tabs__slide swiper-slide">
-                    <div data-id="2" class="works__tab btn btn-black js-tab-button">Штукатурка</div>
-                  </div>
-                  <div class="tabs__slide swiper-slide">
-                    <div data-id="3" class="works__tab btn btn-black js-tab-button">Кровля</div>
-                  </div>
-                  <div class="tabs__slide swiper-slide">
-                    <div data-id="4" class="works__tab btn btn-black js-tab-button">Фасады</div>
-                  </div>
-                </div>
-              </div>
+            <a data-id="1" class="btn-tabs btn js-tab-button active dropdown-btn" id="btn">
+              <span>Стяжка пола</span>
+            </a>
+            <div class="dropdown dropdown-tabs " id="dropdown">
+              <a data-id="2" class="js-tab-button btn btn-black">
+                Штукатурка
+              </a>
+              <a data-id="3" class="js-tab-button btn btn-black">
+                Кровля
+              </a>
+              <a data-id="4" class="js-tab-button btn btn-black">
+                Фасады
+              </a>
+            </div>
             </div>
             <!-- Стяжка пола -->
             <div id="1" class="works__content js-tab-content active">
@@ -1733,7 +1730,7 @@
                   <div class="contacts__row">
                     <div class="contacts__icon">
                       <svg class='svg-icon'>
-                        <use xlink:href='/images/icons/icons.svg#clock'></use>
+                        <use xlink:href='/images/icons/icons.svg#clockContacts'></use>
                       </svg>
                     </div>
                     <div class="contacts__text">
@@ -1909,8 +1906,8 @@
   </div>
 </div>
 
-  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230309135817"></script>
-<script src="js/app.min.js?_v=20230309135817"></script>
+  <script src="files/libs/swiper/swiper-bundle.min.js?_v=20230317112311"></script>
+<script src="js/app.min.js?_v=20230317112311"></script>
 
 </body>
 
